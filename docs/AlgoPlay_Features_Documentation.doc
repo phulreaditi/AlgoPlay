@@ -1,0 +1,206 @@
+<html xmlns:o='urn:schemas-microsoft-com:office:office' xmlns:w='urn:schemas-microsoft-com:office:word' xmlns='http://www.w3.org/TR/REC-html40'>
+<head>
+<meta charset='utf-8'>
+<title>AlgoPlay — Complete Features & Product Specification</title>
+<style>
+body {
+    font-family: 'Segoe UI', Calibri, Arial, sans-serif;
+    line-height: 1.6;
+    color: #1f2937;
+    margin: 40px;
+}
+h1 {
+    color: #1e3a8a;
+    font-size: 26pt;
+    border-bottom: 3px solid #2563eb;
+    padding-bottom: 8px;
+    margin-bottom: 4px;
+}
+.meta {
+    font-size: 11pt;
+    color: #4b5563;
+    margin-bottom: 24px;
+}
+h2 {
+    color: #1e40af;
+    font-size: 18pt;
+    border-bottom: 1.5px solid #e5e7eb;
+    padding-bottom: 4px;
+    margin-top: 28px;
+}
+h3 {
+    color: #2563eb;
+    font-size: 14pt;
+    margin-top: 18px;
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 16px 0;
+}
+th, td {
+    border: 1px solid #d1d5db;
+    padding: 8px 12px;
+    text-align: left;
+    font-size: 10pt;
+}
+th {
+    background-color: #f3f4f6;
+    color: #111827;
+    font-weight: bold;
+}
+tr:nth-child(even) {
+    background-color: #f9fafb;
+}
+code, pre {
+    background-color: #f3f4f6;
+    font-family: Consolas, 'Courier New', monospace;
+    font-size: 9.5pt;
+    border-radius: 4px;
+}
+pre {
+    padding: 12px;
+    border: 1px solid #e5e7eb;
+}
+.badge {
+    display: inline-block;
+    padding: 3px 8px;
+    background-color: #dbeafe;
+    color: #1e40af;
+    border-radius: 4px;
+    font-weight: bold;
+}
+.feature-box {
+    background-color: #f8fafc;
+    border-left: 4px solid #2563eb;
+    padding: 12px 16px;
+    margin: 14px 0;
+}
+</style>
+</head>
+<body>
+
+<h1>AlgoPlay — Complete Features & Product Specification</h1>
+<div class='meta'>
+<strong>Author & Creator:</strong> Aditi Phulre &nbsp;|&nbsp; <strong>License:</strong> MIT License<br>
+<strong>GitHub Repository:</strong> <a href='https://github.com/phulreaditi/AlgoPlay'>https://github.com/phulreaditi/AlgoPlay</a><br>
+<strong>Live Web Application:</strong> <a href='https://phulreaditi.github.io/AlgoPlay/'>https://phulreaditi.github.io/AlgoPlay/</a>
+</div>
+
+<h2>1. Executive Summary</h2>
+<p>
+<strong>AlgoPlay</strong> is an interactive algorithm visualizer and gamified learning engine designed to transform computer science education. It bridges theoretical algorithm complexity with sensory intuition through synchronized real-time animations, companion mascots, branching step predictions, head-to-head racing, and an 8-chapter narrative campaign.
+</p>
+<p>
+The project operates as a <strong>dual-platform system</strong>:
+<ol>
+  <li><strong>Desktop Native (Python + Tkinter)</strong>: A zero-dependency offline application using Python standard library primitives.</li>
+  <li><strong>Web Native (HTML5 Canvas + Modern ES6)</strong>: A responsive browser application deployed globally via GitHub Pages.</li>
+</ol>
+</p>
+
+<h2>2. Comprehensive Feature Inventory</h2>
+
+<div class='feature-box'>
+<h3>2.1 Narrative Story Campaign (8 Chapters)</h3>
+<ul>
+  <li><strong>8 Narrative Chapters:</strong> Structured curriculum covering fundamental sorting, searching, partition mechanics, and divide-and-conquer strategies.</li>
+  <li><strong>Canvas Speech Bubbles:</strong> Narrative speech bubbles rendered directly on the visualization canvas with dynamic character emotions.</li>
+  <li><strong>Progress Persistence:</strong> Saves level completions, XP, and badges locally to <code>saves/progress.json</code>.</li>
+  <li><strong>Boss Levels:</strong> Climax challenge levels testing predictive accuracy against inverted arrays and pathological edge cases.</li>
+</ul>
+</div>
+
+<div class='feature-box'>
+<h3>2.2 Companion Mascots</h3>
+<table border='1'>
+  <tr><th>Mascot</th><th>Algorithm</th><th>Personality & Voice</th></tr>
+  <tr><td>🐻 <strong>Bubble Bear</strong></td><td>Bubble Sort</td><td>Methodical, patient, checks every neighbor step-by-step.</td></tr>
+  <tr><td>🦡 <strong>Insert Badger</strong></td><td>Insertion Sort</td><td>Tidy and neat; sorts like arranging a hand of playing cards.</td></tr>
+  <tr><td>🦥 <strong>Select Sloth</strong></td><td>Selection Sort</td><td>Deliberate and observant; scans entire remaining span for the absolute minimum.</td></tr>
+  <tr><td>🦉 <strong>Merge Owl</strong></td><td>Merge Sort</td><td>Strategic and intellectual; divide-and-conquer master of recursion.</td></tr>
+  <tr><td>🦊 <strong>Quick Fox</strong></td><td>Quick Sort</td><td>Energetic and agile; partitions datasets dynamically around a pivot.</td></tr>
+  <tr><td>🐕 <strong>Linear Hound</strong></td><td>Linear Search</td><td>Loyal and relentless; tracks items element-by-element without assumptions.</td></tr>
+  <tr><td>🦅 <strong>Binary Falcon</strong></td><td>Binary Search</td><td>Sharp-sighted apex hunter; halves the search territory with every dive.</td></tr>
+</table>
+</div>
+
+<div class='feature-box'>
+<h3>2.3 Gamification Engine (XP, Predictions & Badges)</h3>
+<ul>
+  <li><strong>Predict-Next-Step Engine:</strong> Triggers real-time interactive decision checkpoints that pause animation to test learner intuition with instant visual validation.</li>
+  <li><strong>XP & Streak Multipliers:</strong> Awards XP for correct forecasts and builds streak multipliers. Live counter: <code>⚡ XP</code>.</li>
+  <li><strong>14 Collectible Badges:</strong> Unlocks achievement badges (e.g. <em>First Spark</em>, <em>Streak Master</em>, <em>Sort Sensei</em>, <em>Binary Sniper</em>).</li>
+</ul>
+</div>
+
+<div class='feature-box'>
+<h3>2.4 Competitive & Benchmark Modes</h3>
+<ul>
+  <li><strong>Head-to-Head Race Mode:</strong> Split-canvas window running two sorting algorithms concurrently on identical arrays with live comparison/swap counters and celebratory confetti.</li>
+  <li><strong>5-Way Performance Benchmark:</strong> Concurrent evaluation of all sorting algorithms producing an instant comparative bar chart.</li>
+  <li><strong>Algorithm Trivia Quiz:</strong> Dedicated pop-up quiz testing asymptotic notation ($, $\Omega$, $\Theta$), memory bounds, and invariants.</li>
+</ul>
+</div>
+
+<div class='feature-box'>
+<h3>2.5 Dual-Canvas Visualization Engine</h3>
+<ul>
+  <li><strong>Sorting Canvas:</strong> Vertical bars with relational comparison arches (<code>v1 &gt; v2</code>), action badges (<code>CMP</code>, <code>⇄</code>, <code>P</code>), and locked sorted tints.</li>
+  <li><strong>Searching Canvas:</strong> Array element cards with active range brackets (<code>[low … high]</code>), probe indicators, elimination strikethroughs, and match pulse rings.</li>
+</ul>
+</div>
+
+<div class='feature-box'>
+<h3>2.6 Synchronized Coaching & Controls</h3>
+<ul>
+  <li><strong>Live Pseudocode:</strong> Line-by-line active code highlighting tracking generator ticks.</li>
+  <li><strong>Fun Coach:</strong> Contextual plain-English panel explaining <em>What happened</em>, <em>What to watch next</em>, and <em>Why? (Invariant breakdown)</em>.</li>
+  <li><strong>Pre-Flight Concept Briefing:</strong> Conceptual analogies, strategy breakdown, and exact time/space bounds before running.</li>
+  <li><strong>Controls:</strong> Full VCR playback (Start, Step, Pause, Reset, Shuffle), Speed Slider, Array Size Slider, Custom Data Input, and Keyboard Shortcuts.</li>
+  <li><strong>Dual Modern Themes:</strong> Instant Dark / Light mode observer transitions.</li>
+  <li><strong>Audio Synthesizer:</strong> Dynamic sound frequencies scaled to element magnitudes.</li>
+</ul>
+</div>
+
+<h2>3. Algorithm Complexity Matrix</h2>
+<table border='1'>
+  <tr>
+    <th>Algorithm</th><th>Type</th><th>Best (Ω)</th><th>Average (Θ)</th><th>Worst (O)</th><th>Space</th><th>Stable</th><th>Core Invariant</th>
+  </tr>
+  <tr><td><strong>Bubble Sort</strong></td><td>Sort</td><td>Ω(n)</td><td>Θ(n²)</td><td>O(n²)</td><td>O(1)</td><td>Yes</td><td>After pass k, the last k elements are in their final positions.</td></tr>
+  <tr><td><strong>Insertion Sort</strong></td><td>Sort</td><td>Ω(n)</td><td>Θ(n²)</td><td>O(n²)</td><td>O(1)</td><td>Yes</td><td>Prefix A[0…i-1] is sorted at the start of iteration i.</td></tr>
+  <tr><td><strong>Selection Sort</strong></td><td>Sort</td><td>Ω(n²)</td><td>Θ(n²)</td><td>O(n²)</td><td>O(1)</td><td>No</td><td>Prefix A[0…i-1] contains the i smallest elements in sorted order.</td></tr>
+  <tr><td><strong>Merge Sort</strong></td><td>Sort</td><td>Ω(n log n)</td><td>Θ(n log n)</td><td>O(n log n)</td><td>O(n)</td><td>Yes</td><td>Subarrays are recursively sorted and merged preserving relative stability.</td></tr>
+  <tr><td><strong>Quick Sort</strong></td><td>Sort</td><td>Ω(n log n)</td><td>Θ(n log n)</td><td>O(n²)</td><td>O(log n)</td><td>No</td><td>Elements left of pivot are ≤ pivot; elements right are ≥ pivot.</td></tr>
+  <tr><td><strong>Linear Search</strong></td><td>Search</td><td>Ω(1)</td><td>Θ(n)</td><td>O(n)</td><td>O(1)</td><td>N/A</td><td>Target does not exist in the examined prefix A[0…i-1].</td></tr>
+  <tr><td><strong>Binary Search</strong></td><td>Search</td><td>Ω(1)</td><td>Θ(log n)</td><td>O(log n)</td><td>O(1)</td><td>N/A</td><td>Target is strictly bounded within interval A[low…high].</td></tr>
+  <tr><td><strong>Jump Search</strong></td><td>Search</td><td>Ω(1)</td><td>Θ(√n)</td><td>O(√n)</td><td>O(1)</td><td>N/A</td><td>Target is located between blocks m·k and m·(k+1).</td></tr>
+  <tr><td><strong>Interpolation Search</strong></td><td>Search</td><td>Ω(1)</td><td>Θ(log log n)</td><td>O(n)</td><td>O(1)</td><td>N/A</td><td>Assumes uniform distribution; probes estimated slope position.</td></tr>
+  <tr><td><strong>Exponential Search</strong></td><td>Search</td><td>Ω(1)</td><td>Θ(log n)</td><td>O(log n)</td><td>O(1)</td><td>N/A</td><td>Doubles bound exponent until target is bracketed, then binary searches.</td></tr>
+  <tr><td><strong>Ternary Search</strong></td><td>Search</td><td>Ω(1)</td><td>Θ(log₃ n)</td><td>O(log₃ n)</td><td>O(1)</td><td>N/A</td><td>Divides search space into three equal segments via two midpoints.</td></tr>
+</table>
+
+<h2>4. Launch & Execution Reference</h2>
+<p>
+<strong>Desktop Application (Tkinter):</strong>
+<pre>
+# Clone repository
+git clone https://github.com/phulreaditi/AlgoPlay.git
+cd AlgoPlay
+
+# Launch app
+python main.py
+
+# Or double-click run.bat (Windows) or execute ./run.sh (macOS/Linux)
+# Run test suite
+python -m unittest discover tests
+</pre>
+</p>
+<p>
+<strong>Live Web Version:</strong><br>
+Access anytime at <a href='https://phulreaditi.github.io/AlgoPlay/'>https://phulreaditi.github.io/AlgoPlay/</a>
+</p>
+
+</body>
+</html>
