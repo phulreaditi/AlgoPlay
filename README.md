@@ -2,12 +2,16 @@
 
 <p align="center">
   <img src="https://img.shields.io/badge/Python-3.10%2B-blue?style=for-the-badge&logo=python&logoColor=white" alt="Python 3.10+" />
+  <a href="https://phulreaditi.github.io/AlgoPlay/"><img src="https://img.shields.io/badge/Live_Demo-GitHub_Pages-2563EB?style=for-the-badge&logo=githubpages&logoColor=white" alt="Live Demo" /></a>
   <img src="https://img.shields.io/badge/GUI-Tkinter-informational?style=for-the-badge&logo=python" alt="Tkinter GUI" />
   <img src="https://img.shields.io/badge/Dependencies-Zero%20(Stdlib)-success?style=for-the-badge" alt="Zero Dependencies" />
   <img src="https://img.shields.io/badge/Platform-Windows%20%7C%20macOS%20%7C%20Linux-lightgrey?style=for-the-badge" alt="Cross Platform" />
   <img src="https://img.shields.io/github/actions/workflow/status/phulreaditi/AlgoPlay/ci.yml?branch=main&style=for-the-badge&label=CI" alt="CI Status" />
   <img src="https://img.shields.io/badge/License-MIT-green?style=for-the-badge" alt="License" />
 </p>
+
+> 🌐 **Live Web Application:** Experience AlgoPlay directly in your browser without installing anything at [**phulreaditi.github.io/AlgoPlay**](https://phulreaditi.github.io/AlgoPlay/)
+
 
 An interactive, responsive desktop algorithm visualizer designed to make data structures and algorithms intuitive, visual, and engaging — built **purely with Python and Tkinter** with **zero external dependencies**.
 
